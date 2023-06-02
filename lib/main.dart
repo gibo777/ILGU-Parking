@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/Screens/splash_screen.dart';
 import 'package:flutterapp/Screens/login_screen.dart';
-import 'package:flutterapp/Screens/forgotpassword_screen.dart';
 import 'package:flutterapp/Screens/home_screen.dart';
 import 'package:flutterapp/Screens/about_screen.dart';
 import 'package:flutterapp/Screens/printreceipt_screen.dart';
@@ -17,12 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'My App',
+      title: 'Parking Ticketing',
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashsSreen(),
         '/login': (context) => const LoginScreen(),
-        '/forgot': (context) => const ForgotPasswordScreen(),
         '/home': (context) => const HomeScreen(),
         '/contact': (context) => const ContactScreen(),
         '/about': (context) => const AboutScreen(),
